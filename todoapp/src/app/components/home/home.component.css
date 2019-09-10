@@ -1,0 +1,13 @@
+.todoapp {
+    margin-top: 50px;
+}
+
+.img-class {
+    border-radius: 5px;
+    height: 80px;
+}
+
+.example-button-row button,
+.example-button-row a {
+    margin-right: 8px;
+}
