@@ -1,3 +1,4 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 .todoapp {
     margin-top: 50px;
 }

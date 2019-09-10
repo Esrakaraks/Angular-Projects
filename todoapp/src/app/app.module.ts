@@ -25,8 +25,8 @@ import { AboutComponent } from './components/about/about.component';
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
-    MatCardModule,
-    AppRoutingModule
+    AppRoutingModule,
+     MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
