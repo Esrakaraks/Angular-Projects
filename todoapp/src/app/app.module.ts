@@ -5,6 +5,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,8 +26,9 @@ import { AboutComponent } from './components/about/about.component';
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
+    DragDropModule,
     AppRoutingModule,
-     MatCardModule
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
