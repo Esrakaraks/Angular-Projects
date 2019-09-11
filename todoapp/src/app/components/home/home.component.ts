@@ -6,18 +6,23 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  todo = [
+  Pendings = [
     'Get to work',
     'Pick up groceries',
     'Go home',
     'Fall asleep'
   ];
 
-  done = [
+  inProgress = [
     'Get up',
     'Brush teeth',
     'Take a shower',
     'Check e-mail',
+    'Walk dog'
+  ];
+  done = [
+    'Get up',
+    'Brush teeth',
     'Walk dog'
   ];
   constructor() { }
