@@ -9,11 +9,11 @@
         <div class="col-sm-6">
             <form class="example-form">
                 <mat-form-field class="example-full-width">
-                 <textarea matInput placeholder="Leave a comment"></textarea>
+                 <textarea matInput placeholder="Leave a comment" #newtodo> </textarea>
                  </mat-form-field>
             </form>
             <div class="example-button-row">
-                <button mat-raised-button color="primary">Ekle</button>
+                <button mat-raised-button color="primary" (click)="addTodo(newtodo)">Ekle</button>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
         <div
             cdkDropList
             #PendingsList="cdkDropList"
-            [cdkDropListData]="Pendings"
+            [cdkDropListData]="data.Pendings"
             [cdkDropListConnectedTo]="[inProgressList]"
             class="example-list"
             (cdkDropListDropped)="drop($event)">
@@ -38,7 +38,7 @@
             <div
                 cdkDropList
                 #inProgressList="cdkDropList"
-                [cdkDropListData]="inProgress"
+                [cdkDropListData]="data.inProgress"
                 [cdkDropListConnectedTo]="[PendingsList,doneList]"
                 class="example-list"
                 (cdkDropListDropped)="drop($event)">
@@ -52,7 +52,7 @@
                 cdkDropList
                 #doneList="cdkDropList"
                 [cdkDropListData]="done"
-                [cdkDropListConnectedTo]="[inProgressList]"
+                [cdkDropListConnectedTo]="data.[inProgressList]"
                 class="example-list"
                 (cdkDropListDropped)="drop($event)">
                 <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
