@@ -2,8 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
+
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
-import 'hammerjs';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -20,7 +24,9 @@ import { HomeComponent } from './components/home/home.component';
     BrowserAnimationsModule,
     NoopAnimationsModule,
     AppRoutingModule,
-    MatMenuModule
+    MatMenuModule,
+    NgbModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
