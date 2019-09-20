@@ -9,13 +9,25 @@ import {MovieData} from './movieData';
 export class MoviesComponent {
      title= "movie App";
      movies=new MovieData ;
- getItems(){
+   
+
+getItems(){
    return this.movies.items;
  }
-  
+ selectedMovie:MovieData;
+
+ onSelected(items) : void{
+    this.selectedMovie=items;
+
+  }
+
+ 
+}
+
+
  
   
 
    
- 
-}
+
+
