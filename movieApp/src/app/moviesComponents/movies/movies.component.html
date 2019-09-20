@@ -1,1 +1,12 @@
-<p>movies works!</p>
+<div class= "container" style= "margin-left:350px; margin-top:100px">
+ <h1 style="color:pink">{{title}}</h1>
+<div class="card" style= "width:28rem ">
+   <ul class="list-group list-group-flush" >
+     <li *ngFor="let item of getItems()" class ="list-group-item">
+        <span class="badge ">{{item.id }} - </span>{{item.name }} 
+        <span class="close"> x </span>
+     </li>
+             
+    </ul>
+</div>
+</div>
