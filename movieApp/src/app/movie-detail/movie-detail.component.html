@@ -1,0 +1,15 @@
+<div class= "container" style= "margin-left:350px; margin-top:100px">
+ <div class ="card " *ngIf="movieDetail">
+    <div class  ="card-body" style= "width:28rem ">
+        <span class ="badge badge-warning">
+            id:{{movieDetail.id}} name :{{movieDetail.name}}
+        </span>
+
+    <div class="input-group">
+        <input type="text" class="form-control" [(ngModel)]="movieDetail.name">
+        <div class="input-group-append">
+             <button class ="btn btn-outline-secondary" type="button">Update </button>
+        </div>
+    </div>
+    </div>
+      </div>

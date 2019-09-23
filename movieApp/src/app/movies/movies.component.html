@@ -1,0 +1,15 @@
+<movie-detail  [movieDetail]= "selectedMovie"> </movie-detail>
+<div class= "container" style= "margin-left:350px; margin-top:100px">
+<h1 style="color:pink">{{title}}</h1>
+ <div class="card" style= "width:28rem ">
+   <ul class="list-group list-group-flush" >
+     <li *ngFor="let item of getItems(item)"  (click)=onSelected(item) class ="list-group-item"
+     [class.active]='item===selectedMovie'
+     >
+      <span class="badge ">{{item.id }} - </span>{{item.name }} 
+        <span class="close"> x </span>
+     </li>
+             
+    </ul>
+</div>
+</div>
