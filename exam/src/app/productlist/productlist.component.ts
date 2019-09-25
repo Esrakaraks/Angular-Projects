@@ -8,6 +8,10 @@ import { Products } from "./../products";
 })
 export class ProductlistComponent {
       model : Repository=new Repository();
+      product:Products=this.model.getproductById(1) ; 
+    
+
+    
       
   //     getClasses(id : number) : string {
   //       let product =this.model.getproductById(id);
@@ -15,6 +19,6 @@ export class ProductlistComponent {
   
 
   //  }
-   product : Products=this.model.getproductById(2);
+ 
   
 }
