@@ -1,7 +1,7 @@
 import { Products } from './products';
 import { dataSource } from './datasourceModel';
 export class Repository{
-   private Datasource:dataSource;
+    private Datasource:dataSource;
     private products:Products[];
     constructor(){
         this.Datasource=new dataSource;
