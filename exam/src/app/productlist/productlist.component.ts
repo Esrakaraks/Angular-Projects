@@ -8,17 +8,15 @@ import { Products } from "./../products";
 })
 export class ProductlistComponent {
       model : Repository=new Repository();
-      product:Products=this.model.getproductById(1) ; 
-    
-
-    
       
-  //     getClasses(id : number) : string {
-  //       let product =this.model.getproductById(id);
-  //       return(product[id].price <= 1000 ? "bg-info" :"bg-secondary")
+      
+       getClasses(id:number) :string {
+         let pruduct =this.model.getproductById(id);
+         return(pruduct.price<= 1000 ? "bg-info" : "bg-secondary")+ "m-2 p-2"
+       }
+    
+    
   
-
-  //  }
  
   
 }

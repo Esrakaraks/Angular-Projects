@@ -7,15 +7,15 @@
 	 <div class="form-group" >
 	  	<h2  style= "color:#00008B">ÜYE BİLGİ FORMU  </h2>
 	    <label for="exampleInputEmail1">AD</label>
-	    <input type="text" class="form-control"  placeholder="Adınızı Giriniz" style="width: 300px; height: 40px" >
+	    <input type="text" class="form-control"  name ="name" placeholder="Adınızı Giriniz" style="width: 300px; height: 40px" (event)=onChange() >
 	   </div>
 	  <div class="form-group">
 	    <label for="exampleInputPassword1">SOYAD</label>
-	    <input type="text" class="form-control" placeholder="Soyadınızı Giriniz " style="width: 300px; height: 40px">
+	    <input type="text" class="form-control" name="surname" placeholder="Soyadınızı Giriniz " style="width: 300px; height: 40px">
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleInputPassword1">YAŞ</label>
-	    <input type="text" class="form-control" placeholder="Yaşınızı Giriniz" style="width: 300px; height: 40px">
+	    <input type="text" class="form-control" name="age" placeholder="Yaşınızı Giriniz" style="width: 300px; height: 40px">
 	  </div>
 	 
 	  <button type="submit" class="btn btn-primary">KAYDET</button>

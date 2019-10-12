@@ -1,2 +1,9 @@
-<img src ="assets/image/{{product.imageUrl}}">
-<h1 style ="margin :0 px">{{product.name}}</h1>
+{% comment %} <img src ="assets/image/{{product.imageUrl}}">
+<h1 style ="margin :0 px">{{product.name}}</h1> {% endcomment %}
+{% comment %} 
+
+
+
+<div [class] =" getClasses(1) ">
+    katalogdaki ilk ürün {{model.getproductById(1).name}}
+</div> {% endcomment %}

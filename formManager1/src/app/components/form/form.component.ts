@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+
+	onChange(){
+		console.log("hghef");
+	}
+
   constructor() { }
 
   ngOnInit() {
