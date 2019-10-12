@@ -8,24 +8,24 @@ import { FormGroup, FormControl, FormArray, Validators } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
 	  courseForm: FormGroup;
-
-	
-
-  constructor() { }
+ constructor() { }
 
   ngOnInit() {
    this.initForm();
   }
 
-  onSubmit() {    
+  onSubmit() {  
+      console.log(this.courseForm.value);    
   }
 
   private initForm() {
     this.courseForm = new FormGroup({
-      'courseName': new FormControl(null, Validators.required),
-      'courseDesc': new FormControl(null),
-      'courseAmount': new FormControl(null)
+      'courseName': new FormControl(''),
+      'courseDesc': new FormControl(''),
+      'courseAmount': new FormControl('')
     });
   }
+
+
 
 }

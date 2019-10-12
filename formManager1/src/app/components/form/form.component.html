@@ -7,15 +7,25 @@
 	 <div class="form-group" >
 	  	<h2  style= "color:#00008B">ÜYE BİLGİ FORMU  </h2>
 	    <label>AD</label>
-	    <input type="text" class="form-control"  name ="name" placeholder="Adınızı Giriniz" style="width: 300px; height: 40px" (event)=onChange() >
+	    <input  class="form-control"
+            formControlName="courseName" value="name" placeholder="Adınızı Giriniz" style="width: 300px; height: 40px" >
 	   </div>
+
+	   <div *ngIf courseForm.get(courseName).valid && courseForm.get(courseName).touched>
+     	Please enter valid course name !
+	</div>
+
+
 	  <div class="form-group">
 	    <label >SOYAD</label>
-	    <input type="text" class="form-control" name="surname" placeholder="Soyadınızı Giriniz " style="width: 300px; height: 40px">
+	    <input class="form-control"
+            formControlName="courseDesc" placeholder="Soyadınızı Giriniz " style=" width: 300px; height: 40px">
 	  </div>
 	  <div class="form-group">
 	    <label>YAŞ</label>
-	    <input type="text" class="form-control" name="age" placeholder="Yaşınızı Giriniz" style="width: 300px; height: 40px">
+	    <input type="number"
+             class="form-control"
+            formControlName="courseAmount" placeholder="Yaşınızı Giriniz" style="width: 300px; height: 40px">
 	  </div>
 	 
 	  <button type="submit" class="btn btn-primary">KAYDET</button>
