@@ -1,31 +1,27 @@
+{{data}}
 <div  class ="container">
     <div class ="button-type" style ="margin:30px">
     	  <a href="/" style="margin:10px; font-size:15px" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Listesine Geri Dön</a>
-    </div>
+ </div>
 
 	<form [formGroup]="courseForm" (ngSubmit)="onSubmit()" style ="margin:70px">
 	 <div class="form-group" >
 	  	<h2  style= "color:#00008B">ÜYE BİLGİ FORMU  </h2>
 	    <label>AD</label>
 	    <input  class="form-control"
-            formControlName="courseName" value="name" placeholder="Adınızı Giriniz" style="width: 300px; height: 40px" >
+            formControlName="courseName"  placeholder="Adınızı Giriniz" style="width: 300px; height: 40px" >
 	   </div>
 
-	   <div *ngIf courseForm.get(courseName).valid && courseForm.get(courseName).touched>
-     	Please enter valid course name !
-	</div>
-
-
-	  <div class="form-group">
+	 <div class="form-group">
 	    <label >SOYAD</label>
 	    <input class="form-control"
-            formControlName="courseDesc" placeholder="Soyadınızı Giriniz " style=" width: 300px; height: 40px">
+            formControlName="courseSurName" placeholder="Soyadınızı Giriniz " style=" width: 300px; height: 40px">
 	  </div>
 	  <div class="form-group">
 	    <label>YAŞ</label>
 	    <input type="number"
              class="form-control"
-            formControlName="courseAmount" placeholder="Yaşınızı Giriniz" style="width: 300px; height: 40px">
+            formControlName="courseAge" placeholder="Yaşınızı Giriniz" style="width: 300px; height: 40px">
 	  </div>
 	 
 	  <button type="submit" class="btn btn-primary">KAYDET</button>
