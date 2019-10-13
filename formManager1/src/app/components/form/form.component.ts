@@ -15,9 +15,13 @@ export class FormComponent implements OnInit {
   }
 
   onSubmit() {  
-  const data =this.courseForm.value;    
-      console.log(data.courseName);   
-  }
+      const data =this.courseForm.value; 
+
+      return(Object.values(data));
+      }
+        
+  
+
 
   initForm() {
     this.courseForm = new FormGroup({

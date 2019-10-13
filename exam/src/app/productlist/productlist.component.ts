@@ -11,8 +11,8 @@ export class ProductlistComponent {
       
       
        getClasses(id:number) :string {
-         let pruduct =this.model.getproductById(id);
-         return(pruduct.price<= 1000 ? "bg-info" : "bg-secondary")+ "m-2 p-2"
+         let product =this.model.getproductById(id);
+         return(product.price<= 1000 ? "bg-info" : "bg-secondary")+ "m-2 p-2"
        }
     
     

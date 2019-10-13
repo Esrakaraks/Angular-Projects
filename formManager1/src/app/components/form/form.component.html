@@ -1,7 +1,8 @@
-{{data}}
+{{onSubmit()}}
 <div  class ="container">
     <div class ="button-type" style ="margin:30px">
     	  <a href="/" style="margin:10px; font-size:15px" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Listesine Geri Dön</a>
+
  </div>
 
 	<form [formGroup]="courseForm" (ngSubmit)="onSubmit()" style ="margin:70px">
