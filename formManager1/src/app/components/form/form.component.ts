@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { FormGroup, FormControl, FormArray, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-form',
@@ -8,17 +9,18 @@ import { FormGroup, FormControl, FormArray, Validators } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
 	  courseForm: FormGroup;
- constructor() { }
 
-  ngOnInit() {
+ngOnInit() {
+
    this.initForm();
+
   }
-
-  onSubmit() {  
+  
+  onSubmit() { 
+ 
       const data =this.courseForm.value; 
-
       return(Object.values(data));
-      }
+  }
         
   
 
