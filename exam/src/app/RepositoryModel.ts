@@ -4,7 +4,7 @@ export class Repository{
     private Datasource:dataSource;
     private products:Products[];
     constructor(){
-        this.Datasource=new dataSource;
+        this.Datasource =new dataSource;
         this.products=new Array<Products>();
         this.Datasource.getData().forEach(p=>this.products.push(p));
     }

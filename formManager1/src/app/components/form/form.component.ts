@@ -13,20 +13,21 @@ export class FormComponent implements OnInit {
 ngOnInit() {
 
    this.initForm();
-
   }
   
+    
   onSubmit() { 
- 
+  
       const data =this.courseForm.value; 
       return(Object.values(data));
   }
+    
         
   
 
 
   initForm() {
-    this.courseForm = new FormGroup({
+   return this.courseForm = new FormGroup({
       'courseName': new FormControl(''),
       'courseSurName': new FormControl(''),
       'courseAge': new FormControl('')
